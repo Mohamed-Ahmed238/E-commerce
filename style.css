@@ -1,0 +1,1538 @@
+/* for popines writing */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;800;900&display=swap');
+
+/* for all and body */
+
+:root{
+    --back: #fff;
+    --back-collection: #f9f9f9;
+    --white-black: black;
+    --white-gray: gray; 
+    --white-four: #444;
+    --white-two: #222; 
+    --white-six: #666;
+    --whitr-three: #333;
+    --place-holder: rgb(145, 145, 145);
+}
+
+.dark-theme{
+    --back: #030407;
+    --white-black: #fff;
+    --white-gray: #fff;
+    --white-four: #fff;
+    --back-collection: #131e34;
+    --white-two: #fff;
+    --white-six: #777;
+    --whitr-three:#fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--back);
+    transition: all 0.3s ease;
+}
+
+/* designing the line */
+.header{
+    background-color: var(--back);
+    height: 101px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+#trapezoid {
+    width: 125px;
+    height: 0;
+    border-bottom: 35px solid #4267B2 ;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.line{
+    top: 40px;
+    position: fixed;
+    background-color: #4267B2;
+    width: 100%;
+    height: 1px;
+}
+
+.header .logo .cover{
+    width: 124px;
+    height: 0;
+    border-bottom: 35px solid var(--back);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: fixed;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header .logo i{
+    position: fixed;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #4267B2;
+    font-size: 45px;
+    font-weight: 560;
+}
+
+.header .logo h3{
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-family: 600;
+    color: var(--white-four);
+}
+
+.header .logo h3 span{
+    color: #4267B2;
+}
+
+.header .two{
+    top: 100px;
+}
+
+.header .social .fab{
+    font-size: 25px;
+    font-weight: 560;
+    top: 6px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.header .social .fa-facebook-f{
+    left: 190px;
+    color: #4267B2;
+}
+
+.header .social .fa-instagram{
+    left: 250px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header .social .fa-twitter{
+    left: 310px;
+    color: #1DA1F2;
+}
+
+.header .social .fa-whatsapp{
+    color: #25D366;
+    right: 450px;
+    top: 56px;
+}
+
+.header .social p{
+    font-size: 17px;
+    font-weight: 400;
+    top: 56px;
+    position: fixed;
+    right: 306px;
+    color: var(--white-four);
+}
+
+.header .search{
+    position: fixed;
+    left: 153px;
+    top: 57px;
+}
+
+.header .search input{
+    width: 300px;
+    height: 25px;
+    border: 1px solid #444;
+    border-radius: 11px;
+    padding-left: 35px;
+    font-size: 17px;
+    background-color: var(--back-collection);
+    color: var(--white-black);
+}
+
+.header .search input::placeholder{
+    color: var(--place-holder);
+}
+
+.header .search input{
+    outline: none;
+}
+
+.header .search i{
+    position: fixed;
+    top: 62px;
+    left: 162px;
+    font-size: 17px;
+    color: #4267B2;
+}
+
+.header .phone{
+    position: fixed;
+    top: 57px;
+    right: 119px;
+    width: 151px;
+}
+
+.header .phone i{
+    font-size: 18px;
+    color: #4267B2;
+    cursor: pointer;
+}
+
+.header .phone p{
+    position: fixed;
+    top: 57px;
+    right: 120px;
+    color: var(--white-four);
+}
+
+.header .mode{
+    position: fixed;
+    right: 220px;
+    top: 9px;
+    width: 131px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.header .mode .fas{
+    font-size: 22px;
+    color: #4267B2;
+    position: fixed;
+    top: 9px;
+    right: 330px;
+    background-color: var(--back);
+    height: 21px;
+    cursor: pointer;
+}
+
+.header .mode .fa-moon{
+    z-index: 1;
+}
+
+.dark-theme .header .mode .fa-sun{
+    z-index: 2;
+}
+
+.header .mode .dark{
+    z-index: 1;
+}
+
+.dark-theme .header .mode .light{
+    z-index: 2;
+}
+
+.header .mode .mode{
+    position: fixed;
+    top: 6px;
+    font-size: 18px;
+    right: 194px;
+    background-color: var(--back);
+    cursor: pointer;
+    color: var(--white-four);
+}
+
+.header .bars{
+    position: fixed;
+    color: #4267B2;
+    font-size: 31px;
+    top: 59px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+/* sidebar menu design */
+.side-bar{
+    position: fixed;
+    width: 50px;
+    border: 1px solid #4267B2;
+    border-radius: 10px;
+    height: calc(100% - 109px);
+    bottom: 4px;
+    left: 4px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    z-index: 20;
+    background-color: var(--back);
+}
+
+.side-bar .menu a{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #4267B2;
+    cursor: pointer;
+}
+
+.side-bar .menu a:hover{
+    background-color: #cfc3ee;
+}
+
+.side-bar .menu.bar a{
+    height: 80px;
+}
+.side-bar .menu.bar a:hover{
+    background-color: var(--back);
+}
+
+.side-bar .menu a p{
+    display: none;
+}
+
+.side-bar .menu.coll .arrow{
+    display: none;
+}
+
+.side-bar .menu.men a, .side-bar .menu.women a, .side-bar .menu.babies a{
+    display: none;
+} 
+
+/* ======================= active side menu bar ============================== */
+
+.side-bar .menu.men.active a, .side-bar .menu.women.active a, .side-bar .menu.babies.active a{
+    display: flex;
+    padding: 0 10px 0 50px;
+}
+
+.side-bar.active{
+    width: 250px;
+}
+
+.side-bar.active .menu a{
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.side-bar.active .menu a p{
+    display: inline;
+}
+
+.side-bar.active .menu.coll .arrow{
+    display: inline;
+}
+
+.side-bar.active .menu.coll .arrow p{
+    padding-right: 10px;
+}
+
+.side-bar.active .menu.coll .arrow .fa-angle-down{
+    display: none;
+}
+
+
+/* home content design */
+.home-content{
+    padding: 110px 0 0 66px;
+    transition: all 0.3s ease;
+}
+
+.home-content.active{
+    padding: 110px 0 0 265px;
+}
+
+.home-content .content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    height: 450px;
+    margin: 0 auto;
+}
+
+.home-content .content .pic{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-content .content .pic img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.home-content .content .pic img:hover{
+    box-shadow: 10px 10px 10px #444;
+    transform: scale(1.01);
+    border-radius: 20px;
+}
+
+.home-content .content .three img{
+    height: 100%;
+}
+
+.home-content .slide{
+    display: none;
+}
+
+.home-content .container{
+    margin: 30px auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.home-content .container div{
+    width: 28%;
+    box-shadow: 3px 3px 3px #444;
+    text-align: center;
+    font-size: 17px;
+    color: var(--white-four);
+    border-top: 2px solid #4267b2be;
+    border-left: 2px solid #4267b2be;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.home-content .container div:hover{
+    transform: scale(1.01);
+    box-shadow: 10px 10px 10px #444;
+    border-radius: 10px;
+}
+
+.home-content .container div span{
+    text-align: center;
+    color: #4267B2;
+    display: block;
+    font-size: 22px;
+}
+
+/* title styling and common ones*/
+.home-content :where(.men, .women, .kids, .sales, .about-us, .contact-us){
+    margin-top: 150px;
+}
+
+.home-content .title{
+    margin: 10px auto 10px;
+    width: 400px;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    animation-name: example1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+.home-content .title .line{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: #4267B2;
+}
+
+.home-content .title .word{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    background-color: var(--back);
+    font-size: 30px;
+    width: 130px;
+    text-align: center;
+    color: var(--white-black);
+    transition: all 0.3s ease;
+}
+
+.home-content .men .title{
+    width: 500px;
+    animation-name: example2;
+}
+
+.home-content .men .title .word{
+    width: 270px;
+}
+
+
+/* here styling the title of women :) */
+.home-content .women .title{
+    width: 500px;
+    animation-name: example2;
+}
+
+.home-content .women .title .word{
+    width: 315px;
+}
+
+/* here styling the title of Kids :) */
+.home-content .kids .title{
+    width: 500px;
+    animation-name: example2;
+}
+
+.home-content .kids .title .word{
+    width: 270px;
+}
+
+/* here styling the title of sales :) */
+.home-content .sales .title .word{
+    width: 280px;
+}
+
+/* here styling the title of About us :) */
+.home-content .about-us .title .word{
+   width: 160px;
+}
+
+/* here styling the title of contact us :) */
+.home-content .contact-us .title .word{
+    width: 180px;
+ }
+
+
+
+
+
+@keyframes example1 {
+    0%{width: 400px;}
+    50%{width: 130px;}
+    100%{width: 400px;}
+}
+
+@keyframes example2 {
+    0%{width: 500px;}
+    50%{width: 270px;}
+    100%{width: 500px;}
+}
+
+/* men's collections styling */
+.home-content :where(.men, .women, .kids , .sales) .collection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card{
+    width: 30%;
+    position: relative;
+    height: 650px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 40px;
+    background-color: var(--back-collection);
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card .images{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card .images img{
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card .words{
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    line-height: 38px;
+    width: 100%;
+    background-color: var(--back-collection);
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card:hover .words{
+    height: 25%;
+    color: var(--white-black);
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card .words .round-1{
+    display: block;
+    padding-left: 17px;
+    position: absolute;
+    bottom: 35px;
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card:hover .words .round-1{
+    display: none;
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card .words .round-1 .mark {
+    font-size: 22px;
+    color: var(--white-two);
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card .words .round-1 p , .home-content :where(.men, .women, .kids , .sales) .collection .card .words .round-2 .size{
+    font-size: 15px;
+    color: #666;
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card .words .round-2 .size{
+    position: absolute;
+    bottom: 0;
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card .words .price{
+    font-size: 22px;
+    padding-left: 17px;
+    bottom: 0;
+    position: absolute;
+    color: var(--white-black);
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card .words p .deleted{
+    text-decoration-line: line-through;
+    margin: 0 20px;
+    color: #777;
+    font-size: 18px;
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card .words p .offer{
+    color: #4267B2;
+    font-size: 18px;
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card .words .round-2{
+    display: none;
+    padding: 0 17px;
+    position: absolute;
+    bottom: 35px;
+    height: 125px;
+    width: 100%;
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card:hover .words .round-2{
+    display: block;
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card .words .round-2 .fav{
+    border: 1px solid #999;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card .words .round-2 .fav i{
+    margin: 0 20px;
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card .words .round-2 .circles-2{
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 10px;
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card .words .round-2 .circles-2 .circle{
+    width: 10px;
+    height: 10px;
+    border: 5px solid #888;
+    border-radius: 10px;
+}
+
+.home-content :where(.men, .women, .kids , .sales) .collection .card .words .round-2 .circles-2 .activeted{
+    border: 5px solid #4267B2;
+}
+
+/* about-us Styling */
+.home-content .about-us .content2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.home-content .about-us .content2 .picture{
+    width: 40%;
+}
+
+.home-content .about-us .content2 .picture img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.home-content .about-us .content2 .txt{
+    width: 40%;
+    margin-left: -145px;
+
+}
+
+.home-content .about-us .content2 .txt h1{
+    font-size: 30px;
+    color: var(--white-four);
+}
+
+.home-content .about-us .content2 .txt h1 span{
+    color: #4267B2;
+}
+
+.home-content .about-us .content2 .txt h3{
+    margin: 20px 0;
+    color: var(--white-six);
+}
+
+.home-content .about-us .content2 .txt div{
+    color: var(--white-black);
+}
+
+.home-content .about-us .content2 .txt div .off{
+    color: #4267B2;
+    font-weight: bold;
+}
+.home-content .about-us .content2 .txt div .upper{
+    color: #4267B2;
+    font-weight: 500;
+    margin-top: 16px;
+    font-size: 18px;
+}
+
+/* styling contact us section */
+.home-content .contact-us .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.home-content .contact-us .contact-content .col{
+    width: 45%;
+}
+
+.home-content .contact-us .contact-content .left :where(input, textarea){
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    padding: 2px 15px;
+    margin: 10px 0;
+    font-size: 18px;
+    outline: none;
+    color: var(--white-black);
+    background-color: var(--back-collection);
+}
+
+.home-content .contact-us .contact-content .left :where(input, textarea)::placeholder{
+    color: var(--place-holder);
+}
+
+.home-content .contact-us .contact-content .left textarea{
+    height: 140px;
+}
+
+.home-content .contact-us .contact-content .left h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--white-four);
+}
+
+.home-content .contact-us .contact-content .left button{
+    display: block;
+    width: 100px;
+    height: 27px;
+    border-width: 0;
+    color: #fff;
+    background-color: #4267B2;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.home-content .contact-us .contact-content .left button:hover{
+    background-color: #1e3563;
+}
+
+.home-content .contact-us .contact-content .right iframe{
+    width: 100%;
+}
+
+/* designing the footer secion */
+footer .copy{
+    margin: 50px 0 0 0;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #4267B2;
+    color: var(--whitr-three);
+}
+
+footer .copy i{
+    color: #4267B2;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer .copy span{
+    font-size: 18px;
+    color: #4267B2;
+}
+
+
+
+
+
+
+
+/* different screen */
+/* for 1300px */
+@media (max-width: 1300px){
+    .header .logo i{
+        font-size: 40px;
+    }
+    
+    .header .logo h3{
+        font-size: 21px;
+    }
+    .header .search{
+        left: 107px;
+    }
+    .header .search i{
+        left: 118px;
+    }
+    .header .mode{
+        right: 170px;
+    }
+    .header .phone{
+        right: 65px;
+    }
+    .header .phone p{
+        right: 69px;
+    }
+    .header .social .fa-whatsapp{
+        right: 386px;
+    }
+    .header .social p{
+        right: 242px;
+    }
+    .header .social .fa-facebook-f{
+        left: 150px;
+    }
+    
+    .header .social .fa-instagram{
+        left: 200px;
+    }
+    
+    .header .social .fa-twitter{
+        left: 250px;
+    }
+    
+    .header .mode .fas{
+        right: 267px;
+    }
+    .header .mode .mode{
+        right: 130px;
+    }
+
+    .home-content .contact-us .contact-content .left :where(input , textarea){
+        width: 90%;
+    }
+
+    .home-content :where(.men, .women, .kids, .sales, .about-us, .contact-us){
+        margin-top: 130px;
+    }
+
+}
+
+
+
+
+/* for 1124 px */
+@media (max-width: 1124px){
+    .header .logo i{
+        font-size: 35px;
+    }  
+    .header .logo h3{
+        font-size: 18px;
+        font-family: 560;
+    }
+    .header .search{
+        left: 60px;
+    }
+    .header .search i{
+        left: 73px;
+    }
+    .header .mode{
+        right: 135px;
+    }
+    .header .phone{
+        right: 35px;
+    }
+    .header .phone p{
+        right: 39px;
+    }
+    .header .social .fa-whatsapp{
+        right: 354px;
+    }
+    .header .social p{
+        right: 210px;
+    }
+    .header .social .fa-facebook-f{
+        left: 120px;
+    }
+    
+    .header .social .fa-instagram{
+        left: 170px;
+    }
+    
+    .header .social .fa-twitter{
+        left: 220px;
+    }
+
+    .home-content .about-us .content2 .txt {
+        margin-left: -100px;
+    }
+    .home-content .about-us .content2 .picture {
+        width: 45%;
+    }
+    .home-content .contact-us .contact-content .right {
+        width: 50%;
+    }
+    .home-content :where(.men, .women, .kids, .sales, .about-us, .contact-us){
+        margin-top: 110px;
+    }
+
+
+}
+
+
+
+
+
+/* for 1024 px */
+@media (max-width: 1024px){
+    .header .mode{
+        right: 100px;
+    }
+    .header .phone{
+        right: 20px;
+    }
+    .header .social .fa-whatsapp{
+        right: 330px;
+    }
+    .header .social p{
+        right: 188px;
+    }
+    .header .social .fa-facebook-f{
+        left: 120px;
+    }
+    
+    .header .social .fa-instagram{
+        left: 170px;
+    }
+    
+    .header .social .fa-twitter{
+        left: 220px;
+    }
+    .header .mode .fas{
+        right: 220px;
+    }
+    .header .mode .mode{
+        right: 84px;
+    }
+    .header .phone p{
+        right: 24px;
+    }
+    .home-content .about-us .content2 .txt {
+        margin-left: -40px;
+    }
+    .home-content .about-us .content2 .picture {
+        width: 50%;
+    }
+    .home-content :where(.men, .women, .kids, .sales, .about-us, .contact-us){
+        margin-top: 90px;
+    }
+}
+
+
+
+
+
+
+/* for 991px */
+@media (max-width: 991px){
+    .header{
+        height: 108px;
+    }
+    #trapezoid {
+        width: 110px;
+
+    }   
+    .header .logo .cover{
+        width: 110px;
+    }
+    .header .search input{
+        width: 260px;
+    }
+    .header .logo h3{
+        top: 62px;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    .header .search{
+        left: 30px;
+        top: 63px;
+    }
+    .header .search i{
+        left: 41px;
+        top: 68px;
+    }
+    .header .search input{
+        width: 250px;
+    }
+    .header .mode{
+        right: 72px;
+    }
+    .header .phone{
+        right: 70px;
+        top: 50px;
+    }
+    .header .phone p {
+        right: 69px;
+        top: 49px;
+    }
+    .header .social .fa-whatsapp{
+        right: 200px;
+        top: 78px;
+    }
+    .header .social p{
+        right: 58px;
+        top: 78px;
+    }
+    .header .social .fa-facebook-f{
+        left: 80px;
+    }
+    
+    .header .social .fa-instagram{
+        left: 130px;
+    }
+    
+    .header .social .fa-twitter{
+        left: 180px;
+    }
+    .header .two{
+        top: 107px;
+    }
+    .header .mode .fas{
+        right: 186px;
+    }
+    .header .mode .mode{
+        right: 50px;
+    }
+    .side-bar{
+        height: calc(100% - 115px);
+    }
+    .home-content{
+    padding: 117px 0 0 66px;
+    }
+    .home-content :where(.men, .women, .kids , .sales) .collection .card {
+        width: 45%;
+    }
+    .home-content .about-us .content2 .txt {
+        margin-left: 0;
+    }
+    .home-content .about-us .content2 .picture {
+        width: 55%;
+    }
+    .home-content .contact-us .contact-content .right {
+        width: 70%;
+    }
+
+    .home-content .contact-us .contact-content .left{
+        width: 70%;
+        margin-bottom: 60px;
+    }
+    .home-content .contact-us .contact-content .left :where(input , textarea){
+        width: 100%;
+    }
+}
+
+
+/* for 800px */
+@media (max-width: 800px){
+    #trapezoid {
+        width: 90px;
+    }   
+    .header .logo .cover{
+        width: 90px;
+    }
+
+    .header .search input{
+        width: 230px;
+    }
+
+    .header .logo h3{
+        font-weight: 501;
+        font-size: 19px;
+    }
+    .header .search{
+        left: 15px;
+        top: 63px;
+    }
+    .header .search i{
+        left: 27px;
+    }
+    .header .search input{
+        width: 200px;
+    }
+    .header .mode{
+        right: 30px;
+    }
+    .header .phone{
+        right: 23px;
+        top: 50px;
+    }
+    .header .phone p{
+        right: 25px;
+    }
+    .header .social .fa-whatsapp{
+        right: 165px;
+        top: 78px;
+    }
+    .header .social p{
+        right: 23px;
+        top: 78px;
+    }
+    .header .social .fa-facebook-f{
+        left: 40px;
+    }
+    
+    .header .social .fa-instagram{
+        left: 90px;
+    }
+    
+    .header .social .fa-twitter{
+        left: 140px;
+    }
+    .header .mode .fas{
+        right: 138px;
+    }
+    .header .mode .mode{
+        right: 2px;
+    }
+    .home-content .container div{
+        width: 30%;
+    }
+
+    .home-content .about-us .content2 .picture , .home-content .about-us .content2 .txt {
+        width: 80%;
+    }
+    .home-content .contact-us .contact-content .right, .home-content .contact-us .contact-content .left {
+        width: 80%;
+    }
+}
+
+/* for 690 px */
+@media (max-width: 690px){
+    .home-content :where(.men, .women, .kids , .sales) .collection .card {
+        width: 80%;
+    }
+    .home-content :where(.men, .women, .kids, .sales, .about-us, .contact-us){
+        margin-top: 70px;
+    }
+}
+
+
+/* for 650 px */
+@media (max-width: 650px){
+    .header .search input{
+        width: 230px;
+    }
+
+    .header .logo h3{
+        font-size: 20px;
+    }
+    .header .search{
+        left: 15px;
+        top: 63px;
+    }
+    .header .search input{
+        width: 145px;
+    }
+    .header .mode{
+        right: 18px;
+    }
+    .header .phone{
+        right: -5px;
+        top: 50px;
+    }
+    .header .phone p{
+        font-size: 14px;
+        right: 12px;
+    }
+    .header .social .fa-whatsapp{
+        right: 129px;
+        top: 75px;
+    }
+    .header .social p{
+        right: 12px;
+        top: 78px;
+        font-size: 14px;
+    }
+    .header .social .fa-facebook-f{
+        left: 40px;
+    }
+    
+    .header .social .fa-instagram{
+        left: 90px;
+    }
+    
+    .header .social .fa-twitter{
+        left: 140px;
+    }
+    .header .mode .fas{
+        right: 126px;
+    }
+    .header .mode .mode{
+        right: -10px;
+    }
+    .home-content .content{
+        height: 300px;
+    }
+    .home-content .container div {
+        width: 45%;
+    }
+    .home-content .container .container-3{
+    margin-top: 30px;
+    }
+    .home-content .title {
+        margin: 10px auto 10px;
+    }
+    .home-content .men .title{
+        width: 500px;
+        animation-name: example2;
+    }
+    .home-content :where(.men, .women, .kids , .sales) .collection .card {
+        width: 90%;
+    }
+    .home-content .about-us .content2 .picture , .home-content .about-us .content2 .txt {
+        width: 90%;
+    }
+    .home-content .contact-us .contact-content .right, .home-content .contact-us .contact-content .left {
+        width: 90%;
+    }
+
+}
+
+/* for 600 px */
+@media (max-width: 600px){
+    .home-content :where(.men, .women, .kids , .sales) .collection .card {
+        width: 95%;
+    }
+    .home-content :where(.men, .women, .kids , .sales) .title{
+        max-width: 400px;
+    }
+}
+
+/* for 500 px */
+@media (max-width: 500px){
+    #trapezoid {
+        left: 83%;
+    }
+    .header .logo .cover{
+        left: 83%;
+    }
+    .header .logo i{
+        left: 83%;
+    }
+    
+    .header .logo h3{
+        width: 165px;
+        top: 70px;
+        right: -80px;
+        left: initial;
+    }
+    .header .two{
+        top: 130px;
+    }
+    .header{
+        height: 130px;
+    }
+    .header .search{
+        top: 100px;
+        left: 7px;
+    }
+    .header .search i{
+        left: 15px;
+        top: 105px;
+    }
+    .header .search input{
+        width: 190px;
+    }
+    .header .phone p{
+        right: unset;
+        left: 34px;
+    }
+    .header .phone{
+        right: unset;
+        top: 48px;
+        left: 9px;
+    }
+    .header .social .fa-whatsapp{
+        right: unset;
+        top: 73px;
+        left: 8px;
+    }
+    .header .social p{
+        right: unset;
+        top: 75px;
+        left: 34px;
+    }
+    .header .mode .mode{
+        display: none;
+    }
+    .header .mode .fas {
+        right: 160px;
+    }
+    .header .bars{
+        display: inline;
+    }
+
+
+    .side-bar .menu.bar{
+        display: none;
+    }
+    .side-bar{
+        height: calc(100% - 140px);
+        left: -100%;
+        transition: all 0.75s ease;
+    }
+    .home-content{
+        padding: 142px 0 0 0px;
+        width: 100%;
+    }
+    .home-content.active{
+        padding: 138px 0 0 20px;
+    }
+    .side-bar.active{
+        width: calc(100% - 8px);
+        left: 4px;
+    }
+    .side-bar.active .menu a{
+        justify-content: space-between;
+        padding: 0 60px;
+    }
+    .side-bar.active .menu a p {
+        display: inline;
+    }
+    .side-bar.active .menu.coll .arrow {
+        display: inline;
+    }
+    .side-bar.active .menu.coll .arrow .fa-angle-down{
+        display: none;
+    }
+    .side-bar.active .menu.coll .arrow p{
+        padding-right: 10px;
+    }
+    .side-bar .menu.men.active a, .side-bar .menu.women.active a, .side-bar .menu.babies.active a{
+        display: flex;
+        padding: 0 30px 0 120px;
+    }
+    .home-content .content{
+        display: none;
+    }
+
+
+
+    .home-content .slide{
+        display: block;
+        width: 100%;
+        height: 300px;
+        overflow: hidden; 
+        position: relative;
+    }
+    
+    .home-content .slide .slider{
+        width: 400%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        transform: translateX(0);
+        transition: all 0.3s ease;
+    }
+    
+    .home-content .slide .slider img{
+        width: 25%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: all 0.2s ease;
+    }
+    
+    .home-content .slide .slider img:hover{
+        box-shadow: 10px 10px 10px #444;
+        transform: scale(1.01);
+    }
+    
+    .home-content .slide .circles{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 8%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 150px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .home-content .slide .circles .circle{
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        border: 2px solid #fff;
+        transition: all 0.3s ease;
+    }
+    
+    .home-content .slide .circles .circle.active{
+        width: 30px;
+        background-color: #fff;
+    }
+    
+    .home-content .about-us .content2 .picture , .home-content .about-us .content2 .txt {
+        width: 95%;
+    }
+    .home-content .contact-us .contact-content .right, .home-content .contact-us .contact-content .left {
+        width: 95%;
+    }
+}
+
+
+/* for 435 px */
+@media (max-width: 435px){
+    .header .logo h3 {
+        width: 134px;
+        left: initial;
+        top: 60px;
+        text-align: center;
+    }
+    .header .social .fa-facebook-f {
+        left: 10px;
+    }
+    .header .social .fa-instagram {
+        left: 50px;
+    }
+    .header .social .fa-twitter {
+        left: 90px;
+    }
+    .header .mode .fas {
+        right: 117px;
+    }
+    .header .phone {
+        display: none;
+    }
+    .header .social .fa-whatsapp {
+        display: none;
+    }
+    .header .social p {
+        display: none;
+    }
+    .header .bars {
+        top: 50px;
+        left: 30px;
+    }
+    .header .search input {
+        width: 153px;
+    }
+    .home-content .container div {
+        width: 97%;
+    }
+    .home-content .container .container-2{
+        margin-top: 30px;
+    }
+    .home-content .title {
+        max-width: 270px;
+    }
+    .home-content :where(.men, .women, .kids , .sales) .title{
+        max-width: 350px;
+    }
+    .home-content :where(.men, .women, .kids , .sales) .title .word {
+        font-size: 24px;
+    }
+
+    .home-content .women .title .word{
+        width: 260px;
+    }
+
+    .home-content .men .title .word{
+        width: 220px;
+    }
+
+    .home-content .kids .title .word{
+        width: 220px;
+    }
+
+    .home-content .sales .title .word{
+        width: 220px;
+    }
+
+    footer .copy {
+        font-size: 13px;
+    }
+    footer .copy span {
+        font-size: 15px;
+    }
+
+}
+
+/* for 370 px */
+@media (max-width: 370px){
+    .home-content :where(.men, .women, .kids , .sales) .title{
+        max-width: 300px;
+    }
+    
+}
+
+/* for 300 px */
+@media (max-width: 300px){
+    .header .mode .fas {
+        right: 100px;
+    }
+    .home-content .title {
+        max-width: 200px;
+    }
+}
+
